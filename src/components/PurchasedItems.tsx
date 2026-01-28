@@ -4,24 +4,28 @@ const purchasedItems = [
     specs: '120"L, Aged Black Oak',
     price: 3869,
     icon: "🪵",
+    url: "https://rh.com/us/en/catalog/product/product.jsp/prod26350143",
   },
   {
     name: "Copenhagen Sofa",
     specs: "10' wide, Performance Linen Weave, Thyme (sage green)",
     price: 6795,
     icon: "🛋️",
+    url: "https://rh.com/us/en/catalog/product/product.jsp/prod27380009",
   },
   {
     name: "Reyna Chair (x2)",
     specs: "Performance Bouclé, Mochaccino (warm brown)",
     price: 3390,
     icon: "💺",
+    url: "https://rh.com/us/en/catalog/product/product.jsp/prod27940139",
   },
   {
     name: "Herman Miller Aeron Chair (x8)",
     specs: "Graphite polished aluminum, Size B Medium, PostureFit SL, Quiet roll casters",
     price: 11160,
     icon: "🪑",
+    url: "https://www.hermanmiller.com/products/seating/office-chairs/aeron-chair/",
   },
 ];
 
@@ -59,7 +63,14 @@ export default function PurchasedItems() {
               </span>
             </div>
             <h3 className="text-foreground font-semibold text-lg mb-1 group-hover:text-emerald transition-colors">
-              {item.name}
+              <a
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline underline-offset-2"
+              >
+                {item.name}
+              </a>
             </h3>
             <p className="text-muted text-sm mb-4">{item.specs}</p>
             <p className="text-2xl font-bold text-foreground">{formatPrice(item.price)}</p>

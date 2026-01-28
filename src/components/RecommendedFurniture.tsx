@@ -52,7 +52,7 @@ const furniture: FurnitureGroup[] = [
         specs: "Black Oak finish",
         qty: 1,
         price: "~$2,800",
-        url: storeSearchUrl("RH", "Reclaimed Russian Oak Coffee Table"),
+        url: "https://rh.com/us/en/search/results.jsp?query=Reclaimed+Russian+Oak+Coffee+Table&sale=false",
         alternatives: [
           { store: "Arhaus", name: "Brinton Coffee Table", price: "~$1,800", url: "https://www.arhaus.com/collections/coffee-tables" },
           { store: "CB2", name: "Luisa Coffee Table", price: "~$1,200", url: storeSearchUrl("CB2", "Luisa Coffee Table") },
@@ -79,7 +79,7 @@ const furniture: FurnitureGroup[] = [
         specs: "Antiqued Coffee",
         qty: 3,
         price: "~$4,200 ea",
-        url: storeSearchUrl("RH", "French Casement Bookcase"),
+        url: "https://rh.com/us/en/catalog/product/product.jsp/prod2480980",
         alternatives: [
           { store: "Arhaus", name: "Tremont Bookcase", price: "~$3,800", url: storeSearchUrl("Arhaus", "Tremont Bookcase") },
           { store: "Room & Board", name: "Woodwind Bookcase", price: "~$2,500", url: "https://www.roomandboard.com/catalog/living/bookcases-and-wall-units/woodwind-bookcases" },
@@ -90,7 +90,7 @@ const furniture: FurnitureGroup[] = [
         specs: "Antiqued Black Oak",
         qty: 1,
         price: "~$3,200",
-        url: storeSearchUrl("RH", "Printmaker's Media Console"),
+        url: "https://rh.com/us/en/catalog/product/product.jsp/prod360156",
         alternatives: [
           { store: "Article", name: "Oscuro Media Console", price: "~$800", url: storeSearchUrl("Article", "Oscuro Media Console") },
           { store: "CB2", name: "Elements Media Console", price: "~$1,200", url: storeSearchUrl("CB2", "Elements Media Console") },
@@ -106,7 +106,7 @@ const furniture: FurnitureGroup[] = [
         specs: "Antiqued Brass & Glass",
         qty: 1,
         price: "~$4,500",
-        url: storeSearchUrl("RH", "Pauillac Chandelier"),
+        url: "https://rh.com/us/en/catalog/category/products.jsp/cat20470022/category:cat20470022",
         alternatives: [
           { store: "CB2", name: "Cascade Glass Chandelier", price: "~$800", url: storeSearchUrl("CB2", "Cascade Glass Chandelier") },
           { store: "DWR", name: "Nelson Saucer Pendant", price: "~$500", url: "https://www.dwr.com/lighting-ceiling/nelson-saucer-bubble-pendant-medium/6241-2.html?lang=en_US" },
@@ -172,7 +172,7 @@ const furniture: FurnitureGroup[] = [
         specs: "Mix of Burgundy/Cream/Amber",
         qty: 8,
         price: "~$150 ea",
-        url: storeSearchUrl("RH", "Belgian Linen Pillow"),
+        url: "https://rh.com/us/en/catalog/product/product.jsp/prod15040174",
         alternatives: [
           { store: "Article", name: "Skov Throw Pillow", price: "~$50", url: storeSearchUrl("Article", "Skov Throw Pillow") },
           { store: "CB2", name: "Linen Throw Pillow", price: "~$60", url: storeSearchUrl("CB2", "Linen Throw Pillow") },
