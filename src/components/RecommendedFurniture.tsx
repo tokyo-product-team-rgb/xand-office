@@ -54,7 +54,7 @@ const furniture: FurnitureGroup[] = [
         price: "~$2,800",
         url: storeSearchUrl("RH", "Reclaimed Russian Oak Coffee Table"),
         alternatives: [
-          { store: "Arhaus", name: "Brinton Coffee Table", price: "~$1,800", url: storeSearchUrl("Arhaus", "Brinton Coffee Table") },
+          { store: "Arhaus", name: "Brinton Coffee Table", price: "~$1,800", url: "https://www.arhaus.com/collections/coffee-tables" },
           { store: "CB2", name: "Luisa Coffee Table", price: "~$1,200", url: storeSearchUrl("CB2", "Luisa Coffee Table") },
         ],
       },
@@ -82,7 +82,7 @@ const furniture: FurnitureGroup[] = [
         url: storeSearchUrl("RH", "French Casement Bookcase"),
         alternatives: [
           { store: "Arhaus", name: "Tremont Bookcase", price: "~$3,800", url: storeSearchUrl("Arhaus", "Tremont Bookcase") },
-          { store: "Room & Board", name: "Woodwind Bookcase", price: "~$2,500", url: storeSearchUrl("Room & Board", "Woodwind Bookcase") },
+          { store: "Room & Board", name: "Woodwind Bookcase", price: "~$2,500", url: "https://www.roomandboard.com/catalog/living/bookcases-and-wall-units/woodwind-bookcases" },
         ],
       },
       {
@@ -109,7 +109,7 @@ const furniture: FurnitureGroup[] = [
         url: storeSearchUrl("RH", "Pauillac Chandelier"),
         alternatives: [
           { store: "CB2", name: "Cascade Glass Chandelier", price: "~$800", url: storeSearchUrl("CB2", "Cascade Glass Chandelier") },
-          { store: "DWR", name: "Nelson Saucer Pendant", price: "~$500", url: storeSearchUrl("DWR", "Nelson Saucer Pendant") },
+          { store: "DWR", name: "Nelson Saucer Pendant", price: "~$500", url: "https://www.dwr.com/lighting-ceiling/nelson-saucer-bubble-pendant-medium/6241-2.html?lang=en_US" },
         ],
       },
       {
@@ -146,7 +146,7 @@ const furniture: FurnitureGroup[] = [
         price: "~$2,500–$4,000 ea",
         url: storeSearchUrl("RH", "Leather Accent Chair"),
         alternatives: [
-          { store: "DWR", name: "Eames Lounge Chair", price: "~$7,000", url: storeSearchUrl("DWR", "Eames Lounge Chair") },
+          { store: "DWR", name: "Eames Lounge Chair", price: "~$7,000", url: "https://www.dwr.com/living-lounge-chairs/eames-lounge-chair-and-ottoman/5667.html?lang=en_US" },
           { store: "Article", name: "Sven Chair, Charme Tan", price: "~$1,100", url: storeSearchUrl("Article", "Sven Chair Charme Tan") },
         ],
       },
@@ -163,7 +163,7 @@ const furniture: FurnitureGroup[] = [
         url: storeSearchUrl("RH", "Handknotted Antique Persian Rug"),
         alternatives: [
           { store: "1stDibs", name: "Vintage Persian Heriz / Sultanabad, Red/Rust", price: "~$3,000–$10,000", url: externalUrl("1stDibs", "Vintage Persian Heriz Sultanabad Rug Red") },
-          { store: "Arhaus", name: "Amira Hand-Knotted Rug, Warm Red/Rust", price: "~$3,000", url: storeSearchUrl("Arhaus", "Amira Hand-Knotted Rug") },
+          { store: "Arhaus", name: "Amira Hand-Knotted Rug, Warm Red/Rust", price: "~$3,000", url: "https://www.arhaus.com/collections/area-rugs" },
           { store: "Loloi", name: "Layla / Giada Collection, Red/Multi", price: "~$300–$600", url: externalUrl("Loloi", "Layla Giada Red Multi Rug") },
         ],
       },
@@ -199,9 +199,9 @@ const furniture: FurnitureGroup[] = [
         specs: "QLED, Art Mode",
         qty: 1,
         price: "~$2,000",
-        url: storeSearchUrl("RH", "Samsung The Frame TV"),
+        url: "https://www.samsung.com/us/televisions-home-theater/tvs/the-frame/",
         alternatives: [
-          { store: "LG", name: 'C4 OLED 65"', price: "~$1,500", url: externalUrl("LG", "LG C4 OLED 65") },
+          { store: "LG", name: 'C4 OLED 65"', price: "~$1,500", url: "https://www.lg.com/us/tvs/lg-oled65c4pua-oled-4k-tv/" },
           { store: "Sony", name: 'Bravia XR 75"', price: "~$2,200", url: externalUrl("Sony", "Sony Bravia XR 75") },
         ],
       },
