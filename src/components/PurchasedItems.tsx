@@ -17,6 +17,12 @@ const purchasedItems = [
     price: 3390,
     icon: "💺",
   },
+  {
+    name: "Herman Miller Aeron Chair (x8)",
+    specs: "Graphite polished aluminum, Size B Medium, PostureFit SL, Quiet roll casters",
+    price: 11160,
+    icon: "🪑",
+  },
 ];
 
 const total = purchasedItems.reduce((sum, item) => sum + item.price, 0);
@@ -33,7 +39,7 @@ export default function PurchasedItems() {
   return (
     <section>
       <SectionHeading title="Already Purchased" />
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
         {purchasedItems.map((item) => (
           <div
             key={item.name}
@@ -52,11 +58,11 @@ export default function PurchasedItems() {
                 Purchased
               </span>
             </div>
-            <h3 className="text-white font-semibold text-lg mb-1 group-hover:text-emerald transition-colors">
+            <h3 className="text-foreground font-semibold text-lg mb-1 group-hover:text-emerald transition-colors">
               {item.name}
             </h3>
             <p className="text-muted text-sm mb-4">{item.specs}</p>
-            <p className="text-2xl font-bold text-white">{formatPrice(item.price)}</p>
+            <p className="text-2xl font-bold text-foreground">{formatPrice(item.price)}</p>
           </div>
         ))}
       </div>
@@ -74,7 +80,7 @@ export function SectionHeading({ title }: { title: string }) {
   return (
     <div className="flex items-center gap-3 mb-6 sm:mb-8">
       <div className="w-1.5 h-6 bg-emerald rounded-full" />
-      <h2 className="text-xl sm:text-2xl font-bold text-white">{title}</h2>
+      <h2 className="text-xl sm:text-2xl font-bold text-foreground">{title}</h2>
     </div>
   );
 }

@@ -254,7 +254,7 @@ export default function RecommendedFurniture() {
           <div key={group.category} className="bg-card border border-card-border rounded-xl overflow-hidden">
             <div className="px-5 py-3 border-b border-card-border bg-card flex items-center gap-2">
               <span>{categoryIcons[group.category]}</span>
-              <h3 className="text-white font-semibold text-sm uppercase tracking-wider">
+              <h3 className="text-foreground font-semibold text-sm uppercase tracking-wider">
                 {group.category}
               </h3>
             </div>
@@ -270,7 +270,7 @@ export default function RecommendedFurniture() {
                           href={item.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-white font-medium hover:text-emerald transition-colors underline decoration-white/20 hover:decoration-emerald/60 underline-offset-2"
+                          className="text-foreground font-medium hover:text-emerald transition-colors underline decoration-gray-300 hover:decoration-emerald/60 underline-offset-2"
                         >
                           {item.name}
                         </a>
@@ -310,7 +310,7 @@ export default function RecommendedFurniture() {
                       >
                         <span
                           className={`font-semibold ${
-                            storeColors[alt.store] || "text-white"
+                            storeColors[alt.store] || "text-foreground"
                           }`}
                         >
                           {alt.store}

@@ -37,7 +37,7 @@ function FloorPlanCard({
     <div className="bg-card border border-card-border rounded-xl overflow-hidden">
       <div className="p-5 sm:p-6 border-b border-card-border">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-          <h3 className="text-white font-bold text-lg">{title}</h3>
+          <h3 className="text-foreground font-bold text-lg">{title}</h3>
           <span className="text-emerald font-semibold text-lg">{budget}</span>
         </div>
         <p className="text-muted text-sm mt-2 max-w-3xl">{description}</p>
@@ -51,19 +51,19 @@ function Concept1SVG() {
   return (
     <svg viewBox="0 0 800 600" className="w-full max-w-4xl mx-auto" style={{ minWidth: 600 }}>
       {/* Background */}
-      <rect width="800" height="600" fill="#0d0d14" rx="8" />
+      <rect width="800" height="600" fill="#e4e4e7" rx="8" />
 
       {/* Main open area */}
-      <rect x="40" y="80" width="460" height="480" fill="none" stroke="#2a2a3a" strokeWidth="2" />
+      <rect x="40" y="80" width="460" height="480" fill="none" stroke="#d4d4d8" strokeWidth="2" />
       <text x="270" y="65" fill="#71717a" fontSize="11" textAnchor="middle" fontFamily="system-ui">24&apos;7&quot; × 28&apos;7&quot;</text>
 
       {/* Bathroom/utility top left */}
-      <rect x="40" y="80" width="120" height="80" fill="#111118" stroke="#2a2a3a" strokeWidth="2" />
+      <rect x="40" y="80" width="120" height="80" fill="#f4f4f5" stroke="#d4d4d8" strokeWidth="2" />
       <text x="100" y="125" fill="#71717a" fontSize="10" textAnchor="middle" fontFamily="system-ui">Bathroom</text>
 
       {/* Right rooms */}
       {/* Top right - Conference Room */}
-      <rect x="500" y="80" width="260" height="190" fill="#111118" stroke="#2a2a3a" strokeWidth="2" />
+      <rect x="500" y="80" width="260" height="190" fill="#f4f4f5" stroke="#d4d4d8" strokeWidth="2" />
       <text x="630" y="130" fill="#8b9a82" fontSize="13" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Conference Room</text>
       {/* Conference table */}
       <rect x="570" y="150" width="120" height="50" rx="4" fill="none" stroke="#8b7355" strokeWidth="1.5" strokeDasharray="4" />
@@ -72,7 +72,7 @@ function Concept1SVG() {
       <line x1="500" y1="200" x2="500" y2="240" stroke="#10b981" strokeWidth="2" />
 
       {/* Middle right - Focus Room */}
-      <rect x="500" y="270" width="260" height="160" fill="#111118" stroke="#2a2a3a" strokeWidth="2" />
+      <rect x="500" y="270" width="260" height="160" fill="#f4f4f5" stroke="#d4d4d8" strokeWidth="2" />
       <text x="630" y="310" fill="#8b9a82" fontSize="13" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Focus Room</text>
       {/* 4 desks */}
       <rect x="530" y="330" width="50" height="30" rx="2" fill="none" stroke="#b5924c" strokeWidth="1" />
@@ -84,7 +84,7 @@ function Concept1SVG() {
       <line x1="500" y1="310" x2="500" y2="350" stroke="#10b981" strokeWidth="2" />
 
       {/* Bottom right - Call Room */}
-      <rect x="500" y="430" width="260" height="130" fill="#111118" stroke="#2a2a3a" strokeWidth="2" />
+      <rect x="500" y="430" width="260" height="130" fill="#f4f4f5" stroke="#d4d4d8" strokeWidth="2" />
       <text x="630" y="475" fill="#8b9a82" fontSize="13" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Call Room</text>
       {/* Phone booths */}
       <rect x="540" y="490" width="40" height="40" rx="4" fill="none" stroke="#b5924c" strokeWidth="1" />
@@ -102,7 +102,7 @@ function Concept1SVG() {
 
       {/* Oslo Table - centerpiece */}
       <rect x="150" y="250" width="240" height="60" rx="4" fill="#1c1917" stroke="#8b7355" strokeWidth="2" />
-      <text x="270" y="285" fill="#f5f0e8" fontSize="11" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Oslo Table (120&quot;)</text>
+      <text x="270" y="285" fill="#44403c" fontSize="11" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Oslo Table (120&quot;)</text>
       {/* Chairs around table */}
       {[0, 1, 2, 3, 4, 5].map((i) => (
         <circle key={`top-${i}`} cx={170 + i * 44} cy={240} r="8" fill="none" stroke="#8b7355" strokeWidth="1" />
@@ -138,7 +138,7 @@ function Concept1SVG() {
       <text x="770" y="495" fill="#71717a" fontSize="9" textAnchor="middle" fontFamily="system-ui" transform="rotate(90 770 495)">6&apos;</text>
 
       {/* Title */}
-      <text x="400" y="30" fill="#e5e5e5" fontSize="16" textAnchor="middle" fontWeight="700" fontFamily="system-ui">Concept 1 — Open Collaborative</text>
+      <text x="400" y="30" fill="#18181b" fontSize="16" textAnchor="middle" fontWeight="700" fontFamily="system-ui">Concept 1 — Open Collaborative</text>
     </svg>
   );
 }
@@ -147,21 +147,21 @@ function Concept2SVG() {
   return (
     <svg viewBox="0 0 800 600" className="w-full max-w-4xl mx-auto" style={{ minWidth: 600 }}>
       {/* Background */}
-      <rect width="800" height="600" fill="#0d0d14" rx="8" />
+      <rect width="800" height="600" fill="#e4e4e7" rx="8" />
 
       {/* Main open area */}
-      <rect x="40" y="80" width="460" height="480" fill="none" stroke="#2a2a3a" strokeWidth="2" />
+      <rect x="40" y="80" width="460" height="480" fill="none" stroke="#d4d4d8" strokeWidth="2" />
 
       {/* Bathroom/utility top left */}
-      <rect x="40" y="80" width="120" height="80" fill="#111118" stroke="#2a2a3a" strokeWidth="2" />
+      <rect x="40" y="80" width="120" height="80" fill="#f4f4f5" stroke="#d4d4d8" strokeWidth="2" />
       <text x="100" y="125" fill="#71717a" fontSize="10" textAnchor="middle" fontFamily="system-ui">Bathroom</text>
 
       {/* Divider line in main area - work vs lounge */}
-      <line x1="40" y1="340" x2="500" y2="340" stroke="#2a2a3a" strokeWidth="1" strokeDasharray="6" />
+      <line x1="40" y1="340" x2="500" y2="340" stroke="#d4d4d8" strokeWidth="1" strokeDasharray="6" />
 
       {/* Right rooms */}
       {/* Top right - Investor Meeting Room */}
-      <rect x="500" y="80" width="260" height="190" fill="#111118" stroke="#2a2a3a" strokeWidth="2" />
+      <rect x="500" y="80" width="260" height="190" fill="#f4f4f5" stroke="#d4d4d8" strokeWidth="2" />
       <text x="630" y="115" fill="#8b9a82" fontSize="12" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Investor Meeting Room</text>
       {/* Boardroom table */}
       <rect x="555" y="140" width="150" height="50" rx="8" fill="none" stroke="#8b7355" strokeWidth="1.5" />
@@ -180,7 +180,7 @@ function Concept2SVG() {
       <line x1="500" y1="200" x2="500" y2="240" stroke="#10b981" strokeWidth="2" />
 
       {/* Middle right - CEO Office */}
-      <rect x="500" y="270" width="260" height="160" fill="#111118" stroke="#2a2a3a" strokeWidth="2" />
+      <rect x="500" y="270" width="260" height="160" fill="#f4f4f5" stroke="#d4d4d8" strokeWidth="2" />
       <text x="630" y="298" fill="#8b9a82" fontSize="12" textAnchor="middle" fontWeight="600" fontFamily="system-ui">CEO Office</text>
       {/* Executive desk */}
       <rect x="600" y="310" width="100" height="45" rx="3" fill="none" stroke="#b5924c" strokeWidth="1.5" />
@@ -194,7 +194,7 @@ function Concept2SVG() {
       <line x1="500" y1="320" x2="500" y2="360" stroke="#10b981" strokeWidth="2" />
 
       {/* Bottom right - Media/Content Room */}
-      <rect x="500" y="430" width="260" height="130" fill="#111118" stroke="#2a2a3a" strokeWidth="2" />
+      <rect x="500" y="430" width="260" height="130" fill="#f4f4f5" stroke="#d4d4d8" strokeWidth="2" />
       <text x="630" y="470" fill="#8b9a82" fontSize="12" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Media / Content Room</text>
       <rect x="540" y="485" width="80" height="45" rx="3" fill="none" stroke="#b5924c" strokeWidth="1" />
       <text x="580" y="512" fill="#71717a" fontSize="9" textAnchor="middle" fontFamily="system-ui">Edit Desk</text>
@@ -210,7 +210,7 @@ function Concept2SVG() {
       {/* WORKING ZONE - top of main area */}
       {/* Oslo Table */}
       <rect x="180" y="140" width="200" height="50" rx="4" fill="#1c1917" stroke="#8b7355" strokeWidth="2" />
-      <text x="280" y="170" fill="#f5f0e8" fontSize="10" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Oslo Table (120&quot;)</text>
+      <text x="280" y="170" fill="#44403c" fontSize="10" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Oslo Table (120&quot;)</text>
       {/* Chairs */}
       {[0, 1, 2, 3, 4].map((i) => (
         <circle key={`wt-${i}`} cx={200 + i * 40} cy={132} r="7" fill="none" stroke="#8b7355" strokeWidth="1" />
@@ -261,7 +261,7 @@ function Concept2SVG() {
       <text x="770" y="495" fill="#71717a" fontSize="9" textAnchor="middle" fontFamily="system-ui" transform="rotate(90 770 495)">6&apos;</text>
 
       {/* Title */}
-      <text x="400" y="30" fill="#e5e5e5" fontSize="16" textAnchor="middle" fontWeight="700" fontFamily="system-ui">Concept 2 — Executive Lounge</text>
+      <text x="400" y="30" fill="#18181b" fontSize="16" textAnchor="middle" fontWeight="700" fontFamily="system-ui">Concept 2 — Executive Lounge</text>
     </svg>
   );
 }

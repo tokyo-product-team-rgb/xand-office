@@ -19,7 +19,7 @@ export default function ColorPalette() {
               className="aspect-square rounded-xl mb-3 border border-card-border group-hover:scale-105 transition-transform shadow-lg"
               style={{ backgroundColor: color.hex }}
             />
-            <p className="text-white text-sm font-medium">{color.name}</p>
+            <p className="text-foreground text-sm font-medium">{color.name}</p>
             <p className="text-muted text-xs font-mono uppercase">{color.hex}</p>
           </div>
         ))}

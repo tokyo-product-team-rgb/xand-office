@@ -117,7 +117,7 @@ function BudgetBar({ spent, total, color }: { spent: number; total: number; colo
         />
         {/* $50K cap marker */}
         <div
-          className="absolute top-0 h-full w-0.5 bg-white/40"
+          className="absolute top-0 h-full w-0.5 bg-gray-500"
           style={{ left: `${capPct}%` }}
         />
       </div>
@@ -150,7 +150,7 @@ export default function BudgetSummary() {
             <div className={`px-5 py-4 border-b border-card-border ${tier.bgColor}`}>
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                 <div>
-                  <h3 className="text-white font-bold text-lg flex items-center gap-2">
+                  <h3 className="text-foreground font-bold text-lg flex items-center gap-2">
                     <span>{tier.emoji}</span>
                     {tier.name}
                   </h3>
