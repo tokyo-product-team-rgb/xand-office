@@ -3,7 +3,6 @@ import { SectionHeading } from "./PurchasedItems";
 type BudgetItem = {
   label: string;
   price: string;
-  qty?: number;
 };
 
 type BudgetTier = {
@@ -20,21 +19,21 @@ type BudgetTier = {
 };
 
 const SOFT_CAP = 50000;
-const PURCHASED = 14054;
+const PURCHASED = 25214;
 
 const tiers: BudgetTier[] = [
   {
     name: "Dream Build",
     emoji: "✨",
-    description: "Best possible outcome, no compromises",
-    total: 62254,
-    totalLabel: "~$62K",
+    description: "Best possible outcome, no compromises — all RH primary picks",
+    total: 73414,
+    totalLabel: "~$73K",
     color: "text-amber-400",
     barColor: "bg-gradient-to-r from-amber-500 to-amber-300",
     bgColor: "bg-amber-400/5",
     borderColor: "border-amber-400/20",
     items: [
-      { label: "Already Purchased", price: "$14,054" },
+      { label: "Already Purchased (table, sofa, Reyna ×2, Aeron ×8)", price: "$25,214" },
       { label: "Coffee Table (RH Reclaimed Russian Oak)", price: "$2,800" },
       { label: "Side Tables ×2 (RH Thaddeus)", price: "$2,000" },
       { label: "Bookcases ×3 (RH French Casement)", price: "$12,600" },
@@ -42,8 +41,8 @@ const tiers: BudgetTier[] = [
       { label: "Chandelier (RH Pauillac)", price: "$4,500" },
       { label: "Floor Lamps ×2 (RH Drum Shade)", price: "$1,800" },
       { label: "Table Lamps ×2 (RH Luisa)", price: "$1,200" },
-      { label: "Accent Chairs ×2 (RH Premium)", price: "$8,000" },
-      { label: "Persian Rug 9'×12' (RH Handknotted)", price: "$7,000" },
+      { label: "Accent Chairs ×2 (RH Premium, lounge zone)", price: "$8,000" },
+      { label: "Persian Rug 9'×12' (RH Handknotted, red/burgundy)", price: "$7,000" },
       { label: "Pillows ×8 (RH Belgian Linen)", price: "$1,200" },
       { label: "Throw (RH Chunky Knit)", price: "$250" },
       { label: 'Samsung 75" The Frame TV', price: "$2,000" },
@@ -53,15 +52,15 @@ const tiers: BudgetTier[] = [
   {
     name: "Sweet Spot",
     emoji: "🎯",
-    description: "Optimized mix — lands right around $50K",
-    total: 49654,
+    description: "Optimized mix — lands right at the $50K soft cap",
+    total: 49694,
     totalLabel: "~$50K",
     color: "text-emerald",
     barColor: "bg-gradient-to-r from-emerald to-emerald-dark",
     bgColor: "bg-emerald/5",
     borderColor: "border-emerald/20",
     items: [
-      { label: "Already Purchased", price: "$14,054" },
+      { label: "Already Purchased (table, sofa, Reyna ×2, Aeron ×8)", price: "$25,214" },
       { label: "Coffee Table (Arhaus Brinton)", price: "$1,800" },
       { label: "Side Tables ×2 (Article Vitri)", price: "$400" },
       { label: "Bookcases ×3 (Room & Board Woodwind)", price: "$7,500" },
@@ -69,75 +68,90 @@ const tiers: BudgetTier[] = [
       { label: "Chandelier (RH Pauillac — splurge)", price: "$4,500" },
       { label: "Floor Lamps ×2 (Article Stilt)", price: "$400" },
       { label: "Table Lamps ×2 (CB2 Rattan)", price: "$400" },
-      { label: "Accent Chairs ×2 (Article Sven)", price: "$2,200" },
-      { label: "Persian Rug 9'×12' (RH Handknotted)", price: "$5,000" },
-      { label: "Pillows ×8 (CB2 Linen)", price: "$480" },
+      { label: "Accent Chairs ×2 (Article Sven, lounge zone)", price: "$2,200" },
+      { label: "Persian Rug 9'×12' (1stDibs Vintage, red/rust)", price: "$3,500" },
+      { label: "Pillows ×8 (Article Skov)", price: "$400" },
       { label: "Throw (Article Sono)", price: "$80" },
       { label: 'Samsung 75" The Frame TV', price: "$2,000" },
-      { label: "Accessories & Art", price: "$1,000" },
+      { label: "Accessories", price: "$500" },
     ],
   },
   {
     name: "Essentials Only",
     emoji: "⚡",
-    description: "Must-haves to get functional, under $35K",
-    total: 31754,
-    totalLabel: "~$32K",
+    description: "Must-haves to get functional — under $35K total",
+    total: 34814,
+    totalLabel: "~$35K",
     color: "text-sky-400",
     barColor: "bg-gradient-to-r from-sky-500 to-sky-300",
     bgColor: "bg-sky-400/5",
     borderColor: "border-sky-400/20",
     items: [
-      { label: "Already Purchased", price: "$14,054" },
+      { label: "Already Purchased (table, sofa, Reyna ×2, Aeron ×8)", price: "$25,214" },
       { label: "Coffee Table (CB2 Luisa)", price: "$1,200" },
-      { label: "Side Tables ×2 (Article Vitri)", price: "$400" },
       { label: "Bookcases ×2 (Room & Board Woodwind)", price: "$5,000" },
       { label: "Media Console (Article Oscuro)", price: "$800" },
-      { label: "Chandelier (CB2 Cascade Glass)", price: "$800" },
       { label: "Floor Lamps ×2 (Article Stilt)", price: "$400" },
-      { label: "Accent Chairs ×2 (Article Sven)", price: "$2,200" },
       { label: "Rug 9'×12' (Loloi Layla Red/Multi)", price: "$500" },
-      { label: "Pillows ×6 (Article Skov)", price: "$300" },
+      { label: "Pillows ×4 (Article Skov)", price: "$200" },
       { label: 'LG C4 OLED 65"', price: "$1,500" },
-      { label: "Basics & Setup", price: "$500" },
     ],
   },
 ];
 
-function BudgetBar({ spent, total, color }: { spent: number; total: number; color: string }) {
-  const pct = Math.min((spent / (SOFT_CAP * 1.4)) * 100, 100);
-  const capPct = (SOFT_CAP / (SOFT_CAP * 1.4)) * 100;
+function BudgetBar({ spent }: { spent: number }) {
+  const maxBar = SOFT_CAP * 1.6;
+  const pct = Math.min((spent / maxBar) * 100, 100);
+  const capPct = (SOFT_CAP / maxBar) * 100;
+  const purchasedPct = (PURCHASED / maxBar) * 100;
 
   return (
     <div className="relative mt-3 mb-1">
       <div className="h-4 bg-background rounded-full overflow-hidden relative">
+        {/* Purchased portion */}
         <div
-          className={`h-full rounded-full ${color} transition-all duration-700`}
-          style={{ width: `${pct}%` }}
+          className="h-full rounded-l-full bg-emerald/40 absolute left-0 top-0"
+          style={{ width: `${purchasedPct}%` }}
+        />
+        {/* Total bar */}
+        <div
+          className="h-full rounded-full bg-gradient-to-r from-emerald to-accent-brass transition-all duration-700 absolute left-0 top-0"
+          style={{ width: `${pct}%`, opacity: 0.8 }}
         />
         {/* $50K cap marker */}
         <div
-          className="absolute top-0 h-full w-0.5 bg-gray-500"
+          className="absolute top-0 h-full w-0.5 bg-white/50 z-10"
           style={{ left: `${capPct}%` }}
         />
       </div>
-      <div className="flex justify-between mt-1.5">
+      <div className="relative flex justify-between mt-1.5">
         <span className="text-muted text-[10px]">$0</span>
-        <span className="text-muted text-[10px] absolute" style={{ left: `${capPct}%`, transform: "translateX(-50%)" }}>
+        <span
+          className="text-muted text-[10px] absolute"
+          style={{ left: `${purchasedPct}%`, transform: "translateX(-50%)" }}
+        >
+          $25K purchased
+        </span>
+        <span
+          className="text-white/60 text-[10px] font-medium absolute"
+          style={{ left: `${capPct}%`, transform: "translateX(-50%)" }}
+        >
           $50K cap
         </span>
-        <span className="text-muted text-[10px]">${(SOFT_CAP * 1.4 / 1000).toFixed(0)}K</span>
+        <span className="text-muted text-[10px]">${(maxBar / 1000).toFixed(0)}K</span>
       </div>
     </div>
   );
 }
 
 export default function BudgetSummary() {
+  const remaining = SOFT_CAP - PURCHASED;
+
   return (
     <section>
       <SectionHeading title="Budget Tiers" />
       <p className="text-muted text-sm mb-6 -mt-4">
-        Three approaches to building out the office · $50K soft cap shown on each bar
+        Three approaches to building out the office · $50K soft cap · <span className="text-emerald font-medium">${remaining.toLocaleString()}</span> remaining after purchases
       </p>
 
       <div className="space-y-6">
@@ -156,7 +170,7 @@ export default function BudgetSummary() {
                   </h3>
                   <p className="text-muted text-sm mt-0.5">{tier.description}</p>
                 </div>
-                <div className="text-right">
+                <div className="text-right shrink-0">
                   <p className={`text-2xl sm:text-3xl font-bold ${tier.color}`}>
                     {tier.totalLabel}
                   </p>
@@ -169,7 +183,7 @@ export default function BudgetSummary() {
                   </p>
                 </div>
               </div>
-              <BudgetBar spent={tier.total} total={SOFT_CAP} color={tier.barColor} />
+              <BudgetBar spent={tier.total} />
             </div>
 
             {/* Items breakdown */}
@@ -188,7 +202,7 @@ export default function BudgetSummary() {
                       className="flex justify-between items-center py-2 text-sm"
                     >
                       <span className="text-foreground/70">{item.label}</span>
-                      <span className={`font-medium ${tier.color} tabular-nums`}>
+                      <span className={`font-medium ${tier.color} tabular-nums shrink-0 ml-4`}>
                         {item.price}
                       </span>
                     </div>
@@ -211,6 +225,12 @@ export default function BudgetSummary() {
               <p className="text-muted text-xs mt-0.5">{tier.name}</p>
             </div>
           ))}
+        </div>
+        <div className="mt-4 pt-3 border-t border-card-border/50 text-center">
+          <p className="text-muted text-xs">
+            Already spent <span className="text-emerald font-semibold">$25,214</span> of <span className="text-foreground/60 font-semibold">$50,000</span> soft cap
+            — <span className="text-foreground/60 font-semibold">${remaining.toLocaleString()}</span> remaining for new items
+          </p>
         </div>
       </div>
     </section>
