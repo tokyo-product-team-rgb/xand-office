@@ -162,8 +162,9 @@ const furniture: FurnitureGroup[] = [
         price: "~$5,000–$8,000",
         url: storeSearchUrl("RH", "Handknotted Antique Persian Rug"),
         alternatives: [
-          { store: "1stDibs", name: "Vintage Persian Heriz Rug, Red/Rust", price: "~$3,000–$10,000", url: externalUrl("1stDibs", "Vintage Persian Heriz Rug") },
-          { store: "Loloi", name: "Layla Collection, Red/Multi", price: "~$300–$600", url: externalUrl("Loloi", "Layla Red Multi Rug") },
+          { store: "1stDibs", name: "Vintage Persian Heriz / Sultanabad, Red/Rust", price: "~$3,000–$10,000", url: externalUrl("1stDibs", "Vintage Persian Heriz Sultanabad Rug Red") },
+          { store: "Arhaus", name: "Amira Hand-Knotted Rug, Warm Red/Rust", price: "~$3,000", url: storeSearchUrl("Arhaus", "Amira Hand-Knotted Rug") },
+          { store: "Loloi", name: "Layla / Giada Collection, Red/Multi", price: "~$300–$600", url: externalUrl("Loloi", "Layla Giada Red Multi Rug") },
         ],
       },
       {
